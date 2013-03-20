@@ -1,0 +1,50 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/vendor/modernizr.js"></script>
+    </head>
+    <body class="container">
+
+        <section id="todoapp">
+        	<div class="row">
+		    		<header id="header" class="span6 offset3">
+		    			<h1>todos</h1>
+		    			<input id="new-todo" placeholder="What needs to be done?" class="input-block-level" autofocus="">
+		    		</header>
+		    	</div>
+		    	<div class="row">
+		    		<section id="main" class="span6 offset3">
+		    			<input id="toggle-all" type="checkbox">
+		    			<label for="toggle-all">Mark all as complete</label>
+		    			<ul id="todo-list"></ul>
+		    		</section>
+		    	</div>
+		    	<div class="row">
+	    			<footer id="footer" class="span6 offset3"></footer>
+	    		</div>
+	    	</section>
+	    	<div class="row">
+		    	<footer id="info" class="span6 offset3">
+		    		<p>Double-click to edit a todo</p>
+		    		<p>By <a href="http://www.frontendmatters.com">Jesús Carrera</a>, based on TodoMVC by <a href="http://addyosmani.github.com/todomvc/">Addy Osmani</a></p>
+		    	</footer>
+		    </div>
+
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+        <script data-main="scripts/main" src="components/requirejs/require.js"></script>
+</body>
+</html>
