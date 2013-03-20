@@ -1,0 +1,119 @@
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'sass-bootstrap/lib/responsive';
+
+body {
+	background: #eee;
+}
+
+#todoapp {
+	margin-top: 100px;
+}
+
+#header {
+	position: relative;
+	h1 {
+		position: absolute;
+		top: -75px;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.3);
+		text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+		width: 100%;
+	}
+}
+
+#main {
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+	position: relative;
+	background-color: #fff;
+	input {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			&#toggle-all {
+				left: 15px;
+			}
+		}
+	label {
+			margin: 0 30px 0 30px;
+			padding: 10px;
+			
+		}
+}
+
+#footer {
+	margin-top: 5px;
+}
+
+#new-todo {
+	padding: 10px;
+	font-size: 30px;
+	line-height: 32px;
+}
+#todo-list {
+	margin: 5px;
+	li {
+		list-style: none;
+		position: relative;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-bottom: 5px;
+		
+		&:last {
+			margin-bottom: 0;
+		}
+		label, &.editing .edit {
+			font-size: 30px;
+		}
+		.close {
+			position: absolute;
+			right: 5px;
+			top: 7px;
+			font-size: 30px;
+		}
+		.edit {
+			display: none;
+		}
+		&.completed {
+			opacity: .5;
+			text-decoration: line-through;
+		}
+		&.editing {
+			.edit {
+				display: block;
+				// padding: 3px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+		}
+	}
+}
+#todo-count {
+	font-size: 13px;
+}
+
+#filters {
+	font-size: 12px;
+	li {
+		list-style: none;
+		display: inline;
+		margin: 0 2px;
+	}
+}
+#clear-completed {
+	font-size: 12px;
+	float: right;
+}
+
+#info {
+	margin-top: 30px;
+	font-size: 11px;
+	
+	text-align: center;
+	
+	&, & a {
+		color: #aaa;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	}
+}

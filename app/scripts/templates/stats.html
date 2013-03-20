@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="span2">
+		<span id="todo-count"><strong><%= remaining %></strong> <%= remaining == 1 ? 'item' : 'items' %> left</span>
+	</div>
+	<div class="span2">
+		<ul id="filters">
+			<li>
+				<a class="selected" href="/">All</a>
+			</li>
+			<li>
+				<a href="/active">Active</a>
+			</li>
+			<li>
+				<a href="/completed">Completed</a>
+			</li>
+		</ul>
+	</div>
+	<div class="span2">
+		<% if ( completed ) { %>
+		<button id="clear-completed" class="btn btn-mini">Clear completed (<%= completed %>)</button>
+		<% } %>
+	</div>
+</div>
+
+
+
