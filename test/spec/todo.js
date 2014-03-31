@@ -1,15 +1,15 @@
-describe('Todo', function(){
-console.log('asd');
-  beforeEach(function(){
-    todo = new TodoModel();
-      
-  }); 
+define([
+  'models/todo'
+], function (TodoModel) {
+  'use strict';
+  describe('Todo', function(){
+    beforeEach(function(){
+      this.todo = new TodoModel();
+    }); 
 
-   
+    it('should have correct default values', function(){
+      expect(this.todo.get('title')).to.equal('');
+    });
 
-   it('should have correct default values', function(){
-      expect(todo.get('title')).to.equal('');
-      expect(todo.get('title')).to.equal(false);
-   });
-
+  });
 });

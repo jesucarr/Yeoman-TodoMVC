@@ -12,6 +12,9 @@ define([
 
 		setFilter: function( param ) {
 			// Set the current filter to be used
+			if (!param) {
+				param = '';
+			}
 			Common.TodoFilter = param.trim() || '';
 
 			// Trigger a collection filter event, causing hiding/unhiding

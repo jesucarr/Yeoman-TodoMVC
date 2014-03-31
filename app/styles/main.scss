@@ -1,5 +1,4 @@
 @import 'sass-bootstrap/lib/bootstrap';
-@import 'sass-bootstrap/lib/responsive';
 
 body {
 	background: #eee;
@@ -32,7 +31,7 @@ body {
 			top: 10px;
 			left: 10px;
 			&#toggle-all {
-				left: 15px;
+				left: 25px;
 			}
 		}
 	label {
@@ -51,9 +50,11 @@ body {
 	padding: 10px;
 	font-size: 30px;
 	line-height: 32px;
+	width: 100%
 }
 #todo-list {
-	margin: 5px;
+	margin: 0;
+	padding: 0;
 	li {
 		list-style: none;
 		position: relative;
@@ -64,13 +65,16 @@ body {
 		&:last {
 			margin-bottom: 0;
 		}
+		.toggle {
+			top: 22px;
+		}
 		label, &.editing .edit {
 			font-size: 30px;
 		}
 		.close {
 			position: absolute;
 			right: 5px;
-			top: 7px;
+			top: 13px;
 			font-size: 30px;
 		}
 		.edit {
